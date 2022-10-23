@@ -8,7 +8,7 @@ path_filename = path_dir+os.sep+filename
 # Initialize variables
 list_entry, str_msg, send, email, timestamp = [], '', False, '', ''
 
-def func_gmail(sender='reza.s.tahirkheli@gmail.com', password='fotbkdhvoasemwwi', receiver='', body=''):
+def func_gmail(sender='youremail', password='yourpassword', receiver='', body=''):
     context = ssl.create_default_context()
     with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smtp:
         smtp.login(sender, password)
